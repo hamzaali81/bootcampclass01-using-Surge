@@ -32,5 +32,5 @@ jobs:
       - name: Installing Surge
         run:  npm install --global surge 
       - name: Deploying using surge
-        run:  surge ./ guarded-railway.surge.sh --token ${{SURGE_TOKEN}}
+        run:  surge ./ guarded-railway.surge.sh --token ${{secrets.SURGE_TOKEN}}
           
