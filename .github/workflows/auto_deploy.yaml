@@ -31,6 +31,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Installing Surge
         run:  npm install --global surge 
-        name: deploying using surge
-        run:  surge ./ \bootcamp-practice\ --token ${{SURGE_TOKEN}}
+        name: Deploying using surge
+        run:  surge ./ guarded-railway.surge.sh --token ${{SURGE_TOKEN}}
           
